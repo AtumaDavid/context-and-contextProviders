@@ -12,7 +12,7 @@ function App() {
   };
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="container dark-theme">
+      <div className={`container ${theme}-theme`}>
         <Header />
         <Button />
       </div>
